@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #fff;
+}
+header{
+	width:auto!important;
+	height: auto;
+	margin: 0 auto;
+}
+
+.logo-olmos{
+	padding-left: 50px;
+	padding-top: 300px;
+	padding-right: 0;
+}
+.fondo{
+	position: fixed;
+	background-image: url("../images/cabecera-1.jpg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	height: 1080px;
+}
+.btn-contactos:link, .btn-contactos:visited{
+	display: block;
+	margin-top: 30px;
+	margin-left: 30px;
+	width: 200px;
+	height: 44px;
+	background-image: url("../images/btn-contacto.png");
+	background-position: top left;
+}
+.btn-contactos:hover {
+	background-position: 0 44px;
+}
+.row{
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+
+#redes{
+	clear: both;
+	display:block;
+	list-style: none;
+	width:100%;
+	top: 200px;
+}
+#redes li {
+	display:block!important;
+	float: left;
+	width: 30px!important;
+	height: 30px!important;
+	margin-left: 30px;
+}
+#redes li a{
+	width:30px;
+	height: 30px;
+}
+
+#redes li a img, #correo img{
+	display:block;
+	width:30px!important;
+	height: 30px!important;
+}
+.proximamente{
+	padding-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+@media (max-width:768px){
+	.fondo{
+		background-image: url("../images/cabecera-1-min.jpg");
+	}
+	.logo-olmos{
+		padding-top: 400px;
+	}
+	.logo-olmos img, .proximamente img{
+		width: 90%;
+		height: auto;
+	}
+	#redes{
+		top: 100px;
+	}
+}
